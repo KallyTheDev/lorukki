@@ -1,0 +1,606 @@
+body {
+    font-family: 'poppins';
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* header------------------------------------------ */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    height: 70px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container h1 {
+    color: white;
+    font-size: 30px;
+}
+
+header .container a {
+    padding: 0 5px;
+    margin: 0 10px;
+}
+
+header .container a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* main----------------------------- */
+main {
+    background-color: blue;
+    height: 400px;
+    position: relative;
+    padding: 100px 0 ;
+    color: white;
+}
+
+main .deployment {
+    animation: slideinfromleft 1s ease-in;
+}
+
+main .deployment .btn {
+    /* background-color: transparent; */
+    border: 1px solid white;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main h1, p {
+    margin: 20px 0;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+main .demo {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.808);
+    width: 300px;
+    height: 300px;
+    color: black;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+    justify-self: flex-end;
+    z-index: 100;
+    animation: slideinfromright 1s ease-in;
+}
+
+main .demo h4 {
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+main .demo input[type=text], input[type=email]{
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+main .demo input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+}
+
+main .demo .btn {
+    background-color: blue;
+    color: white;
+}
+
+/* skew------------------------------------ */
+.skew {
+    height: 70px;
+    background-color: white;
+    transform: skewY(-2.5deg);
+    position: relative;
+    bottom: 10px;
+}
+
+/* platform -----------------------------------*/
+.platform .lead{
+    text-align: center;
+}
+
+.platform-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.platform-img h3 {
+    font-size: 30px;
+}
+
+i {
+    font-size: 50px;
+}
+
+/* npm -----------------------------------*/
+.npm {
+    padding-bottom: 100px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 60px;
+}
+
+.npm >*:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.npm img {
+    height: 200px;
+}
+
+
+/* cloud --------------------------------*/
+.cloud {
+    color: white;
+    background-color: blue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cloud .container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.cloud .container h2 {
+    font-size: 40px;
+}
+
+.cloud i {
+    font-size: 200px;
+}
+
+.cloud .btn {
+    background-color: rgb(15, 15, 73);
+}
+
+
+/* languages --------------------------------*/
+.languages {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.languages .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.languages h3 {
+    margin: 15px 0;
+}
+.languages p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.languages .card {
+    width: 90px;
+}
+
+.languages .card:hover {
+    transform: translateY(-10px);
+    transition: ease-in;
+}
+
+
+/* features------------------------------- */
+.features {
+    background-color: blue;
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+}
+
+.features .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features .lead {
+    flex: 1;
+}
+
+.features i {
+    flex: 1;
+    text-align: right;
+    font-size: 120px;
+}
+
+.features h3 {
+    font-size: 50px;
+}
+
+
+/* feat-platform */
+.feat-platform {
+    padding: 60px 0;
+    background-color: rgb(219, 219, 219);
+}
+
+.feat-platform .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feat-platform .lead {
+    flex: 1;
+}
+
+.feat-platform i {
+    flex: 1;
+    font-size: 120px;
+    text-align: right;
+    color: rgb(31, 31, 255);
+}
+
+.feat-platform h3 {
+    font-size: 30px;
+}
+
+
+/* feat-cards */
+.feat-cards .card-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feat-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 80px 0;
+}
+
+.feat-cards>*:first-child {
+    grid-column: 1 / span 3;
+}
+
+.feat-cards>*:nth-child(2) {
+    grid-column: 1 / span 2;
+}
+
+
+/* docs */
+.docs {
+    background-color: blue;
+    color: white;
+    padding: 30px 0;
+}
+
+.docs .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.docs .lead h3 {
+    font-size: 40px;
+}
+
+.docs .container i {
+    font-size: 150px;
+}
+
+/* docs-main */
+.docs-main {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.docs-main .card{
+    background-color: lightgray;
+    height: 350px;
+}
+
+.docs-main a {
+    color: black;
+    display: block;
+    border-bottom: 1px solid rgb(134, 134, 134);
+}
+
+.docs-main h3{
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.docs-main .card1{
+    height: auto;
+    background-color: white;
+}
+
+.docs-main .card1 h4 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.docs-main .card1 i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.docs-main .card1 .alert {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.docs-main .card1 .btn a {
+    color: white;
+    border-bottom: none;
+}
+
+.docs-main .card1 pre {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(32, 32, 143);
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+footer i:hover {
+    transform: translateY(10px);
+    transition: ease-in;
+}
+
+
+
+
+
+/* tablet view---------------------------------------- */
+@media (max-width: 780px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* tablet header */
+    header {
+        width: 100%;
+        background-color: blue;
+        height: 70px;
+    }
+
+    header .container {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    header .container a {
+        padding: 0 5px;
+        margin: 0 5px;
+    }
+
+    header nav {
+        background-color: rgb(0, 0, 170);
+    }
+
+    /* tablet main */
+    main .demo {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.808);
+        width: 300px;
+        height: 300px;
+        color: black;
+        padding: 10px;
+        position: relative;
+        top: 40px;
+        right: 10px;
+        justify-self: flex-end;
+        z-index: 100;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* mobile view----------------------------------- */
+@media (max-width: 500px) {
+    *{
+        line-height: normal;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* main mobile view */
+    main {
+        background-color: blue;
+        height: 500px;
+        position: relative;
+        padding: 20px 0 ;
+        color: white;
+        width: 100%;
+    }
+
+    main .deployment {
+        animation: slideinfromtop 1s ease-in;
+    }
+
+    main .container {
+        display: block;
+        gap: 20px;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    main .demo {
+        top: 15px;
+        z-index: 100;
+        justify-self: center;
+        margin: auto;
+        animation: slideinfrombottom 1s ease-in;
+    }
+    
+    /* platform mobile view */
+    .platform-img {
+        display: block;
+        text-align: center;
+    }
+
+    .platform-img p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .platform-img i{
+        margin-top: 30px;
+    }
+
+    .platform .lead {
+        padding-top: 30px;
+    }
+
+    /* npm mobile view */
+    .npm {
+        padding-bottom: 100px;
+        display: block;
+        margin-top: 60px;
+    }
+
+    /* cloud mobiole view */
+    .cloud .container {
+        height: 350px;
+        display: block;
+        align-items: center;
+        gap: 100px;
+    }
+    
+    .cloud .container h2 {
+        font-size: 30px;
+    }
+
+    .cloud i {
+        font-size: 150px;
+    }
+
+    /* footer mobile view */
+    footer .container {
+        height: 280px;
+        display: block;
+    }
+    
+    footer .container .first {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .container .second {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* features mobile view */
+    .features .container {
+        display: block;
+        
+    }
+
+    .feat-platform .container {
+        display: block;
+        width: 100%;
+    }
+
+    .feat-cards {
+        display: block;
+        margin: 0 10px;
+    }
+
+    .feat-platform i {
+        font-size: 100px;
+    }
+
+    .features i {
+        font-size: 100px;
+    }
+   
+    /* docs */
+    .docs .container {
+        display: block;
+    }
+
+    .docs .lead h3 {
+        font-size: 30px;
+    }
+    .docs .container i {
+        font-size: 100px;
+    }
+    
+    .docs-main {
+        padding: 30px 0;
+        display: block;
+       
+    }
+
+
+
+
+}
